@@ -8,7 +8,7 @@ Potential Bonus Value: `1.2` (as double `1.2000000476837158`)
 
 ## Tests
 
-**Lvl22 14/15/12 Greedent (Lvl1 Max Darkness) + Lvl20 14/15/10 Wooloo (Take Down) vs Pidove (T1), NWB, NFB, 40 helpers**
+**Lvl22 14/15/12 Greedent (Lvl1 Max Darkness) + Lvl20 14/15/10 Wooloo (Take Down) vs Pidove (T1), NWB, NFB, 40 helpers** ([battle](https://www.youtube.com/watch?v=-hcMaO_u3gQ))
 
 Sequence: `[67, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1]`
 

@@ -424,6 +424,25 @@ Bonus Values Range: `1.183774` - `1.195914`
 
 ---
 
+**Lvl20 11/??/?? Charmander (Lvl1 Max Flare) + Lvl20 14/13/12 Wooloo (Ember) vs Grookey (T1), NWB, NFB, 5 helpers**
+
+Sequence: `[80, 0, 1, 1, 1, 0, 1, 1, 1, 0]`
+
+```python
+atkStats = []
+atkStats.append([250, 116, 11, 0.5974, 1.2, 1.6, 1.0])
+atkStats.append([5, 76, 14, 0.5974, 1.2, 1.0, 1.0])
+defStats = [1700, 91, 0.15]
+bonus = 1.0
+atkSeq = [0] + [1] * 9
+```
+
+Attacks Damage: `[{1360, 1361}, {13}]`
+
+Bonus Values Range: `1.186688` - `1.188433`
+
+---
+
 **Lvl20 13/14/14 Kingler (Lvl1 G-Max Foam Burst) + Lvl20 14/14/15 Charmander (Ember) vs Omanyte (T1), NWB, NFB, 5 helpers**
 
 Sequence: `[88, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1]`
