@@ -12,6 +12,6 @@ atkSeq = [0] + [1] * 27
 segSeq = [67, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1]
 
 # Bonus values range config
-start, end, step = 1.191, 1.201, 0.000001
+start, end, step = 1.199, 1.201, 0.000001
 
 main(atkStats, defStats, bonus, atkSeq, segSeq, start, end, step)
