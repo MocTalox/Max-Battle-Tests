@@ -54,4 +54,4 @@ def main(atkStats, defStats, bonus, atkSeq, segSeq, start, end, step):
 		print(str(minx) + " -> " + str(resRange[minx]))
 		print(str(maxx) + " -> " + str(resRange[maxx]))
 	elif segSeq != None:
-		print("No result found on range: " + str(start) + " - " + str(end))
+		print("No result found on range: " + str(start / step) + " - " + str(end / step))
