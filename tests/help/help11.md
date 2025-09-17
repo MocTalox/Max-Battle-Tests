@@ -8,7 +8,7 @@ Potential Bonus Value: `1.196` (as double `1.1959999799728394`)
 
 ## Tests
 
-**Lvl29 12/11/15 Lapras (Lvl1 G-Max Resonance) + Lvl20 11/12/12 Shuckle (Struggle Bug) vs Trubish (T1), NWB, NFB, 11 helpers**
+**Lvl29 12/11/15 Lapras (Lvl1 G-Max Resonance) + Lvl20 11/12/12 Shuckle (Struggle Bug) vs Trubish (T1), NWB, NFB, 11 helpers** ([battle](https://drive.google.com/file/d/1rWxFM_4oEEqivHCob1xNX2uso_u6r3qD/view))
 
 Sequence: `[91, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1]`
 

@@ -27,7 +27,7 @@ Bonus Values Range: `1.193472` - `1.197150`
 
 ---
 
-**Lvl25 13/15/14 Blastoise (Lvl1 Max Geyser) + Lvl20 13/13/11 Shuckle (Struggle Bug) vs Pidove (T1), NWB, NFB, 10 helpers**
+**Lvl25 13/15/14 Blastoise (Lvl1 Max Geyser) + Lvl20 13/13/11 Shuckle (Struggle Bug) vs Pidove (T1), NWB, NFB, 10 helpers** ([battle](https://drive.google.com/file/d/1oqOMgtGpsDsvKCf5IoMR2A-PViVRKCmz/view))
 
 Sequence: `[90, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]`
 
@@ -46,7 +46,7 @@ Bonus Values Range: `1.194266` - `1.195038`
 
 ---
 
-**Lvl28 10/13/14 Blastoise (Lvl1 G-Max Cannonade) + Lvl20 14/11/11 Shuckle (Struggle Bug) vs Trubish (T1), NWB, NFB, 10 helpers**
+**Lvl28 10/13/14 Blastoise (Lvl1 G-Max Cannonade) + Lvl20 14/11/11 Shuckle (Struggle Bug) vs Trubish (T1), NWB, NFB, 10 helpers** ([battle](https://drive.google.com/file/d/1oqIiyXpxNrbIECyXoUDgMqX-CIU5IBaM/view))
 
 Sequence: `[91, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1]`
 

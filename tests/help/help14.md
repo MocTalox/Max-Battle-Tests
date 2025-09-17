@@ -26,7 +26,7 @@ Bonus Values Range: `1.193263` - `1.205956`
 
 ---
 
-**Lvl28 10/13/14 Blastoise (Lvl1 G-Max Cannonade) + Lvl20 10/15/13 Caterpie (Tackle) vs Trubish (T1), NWB, NFB, 14 helpers**
+**Lvl28 10/13/14 Blastoise (Lvl1 G-Max Cannonade) + Lvl20 10/15/13 Caterpie (Tackle) vs Trubish (T1), NWB, NFB, 14 helpers** ([battle](https://drive.google.com/file/d/1ff7Q4g3l6JUGeCfrJMjL39aMNNB4qbms/view))
 
 Sequence: `[92, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0]`
 

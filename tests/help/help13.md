@@ -8,7 +8,7 @@ Potential Bonus Value: `1.198` (as double `1.1979999542236328`)
 
 ## Tests
 
-**Lvl28 10/13/14 Blastoise (Lvl1 G-Max Cannonade) + Lvl20 13/13/11 Shuckle (Struggle Bug) vs Trubish (T1), NWB, NFB, 13 helpers**
+**Lvl28 10/13/14 Blastoise (Lvl1 G-Max Cannonade) + Lvl20 13/13/11 Shuckle (Struggle Bug) vs Trubish (T1), NWB, NFB, 13 helpers** ([battle](https://drive.google.com/file/d/1bW3OkAP2VGtmNg7Qz8Sf8Ub1E0jTCgR0/view))
 
 Sequence: `[92, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1]`
 
