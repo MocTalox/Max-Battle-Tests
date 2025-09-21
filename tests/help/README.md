@@ -5,6 +5,6 @@ This section holds all the tests done to obtain the values of the helpers bonuse
 For each test, this information is represented:
 - A title, indicating all the necessary info about the tests (boss, attackers, bonuses), so to be able to replicate it (both in-game and simulations).
 - The segment sequence, which is the obtained result from the test, in the form of how many segments were dropped after each attack.
-- Python code holding all the stats that represents the tests. Use it as the input for the `mult_test.main()` method. For convenience, replace this code on the `help_test.py` file, optionally use the segment sequence, adjust the values range and execute it to obtain the result from the test.
+- Python code holding all the stats that represents the tests. Use it as the input for the [`mult_test.main()`](../../src/mult_test.py) method. For convenience, replace this code on the [`help_test.py`](../../src/help_test.py) file, optionally use the segment sequence, adjust the values range and execute it to obtain the result from the test.
 - Resulting damage values as a list of sets. Each set holds the possible damage values for each type of attack. These values are the only ones that are able to reproduce the segment sequence.
 - Resulting helper bonus values range, the only values that produce the previous damage values.
