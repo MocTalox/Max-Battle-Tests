@@ -13,3 +13,8 @@ segStr = lambda s, xd, td : "Seg: " + str(s) + " | Extra: " + str(xd) + " dmg | 
 
 # Prints `segStr` result to output file
 segPrint = lambda dmg, hp : print(segStr(*segCalc(dmg, hp)))
+
+# Calculates the possible multiplier values needed to produce
+# the resulting damage, by being multiplied to a base damage:
+# Iow, values which fulfill: floor(base * mult) + 1 = res
+mult = lambda res, base : ((res - 1) / base, res / base)
