@@ -4,7 +4,7 @@ Max Mushroom description states that *it **doubles** the damage your Pokémon de
 
 The possibilites are: `floor(2 * dmg) + 1`, `floor(2 * dmg) + 2`, `2 * floor(dmg) + 1`, `2 * floor(dmg) + 2`. We came up with only these 4 possiblities, as we have to double the main source of damage, leaving us with two options, multiply by `2` inside or outside the `floor` function, and optionally consider the `+ 1` term to be doubled as well or not, adding the other two options.
 
-For each test, the symbol 💚 indicates the formula was successful and the symbol 💔 indicates the formula failed.
+For each test, the symbol ✔️ indicates the formula was successful and the symbol ❌ indicates the formula failed.
 
 ## Summary
 
@@ -30,10 +30,10 @@ Real output damage: `40`
 40
 ```
 
-- `floor(2 * dmg) + 1` = `40` 💚
-- `floor(2 * dmg) + 2` = `41` 💔
-- `2 * floor(dmg) + 1` = `39` 💔
-- `2 * floor(dmg) + 2` = `40` 💚
+- `floor(2 * dmg) + 1` = `40` ✔️
+- `floor(2 * dmg) + 2` = `41` ❌
+- `2 * floor(dmg) + 1` = `39` ❌
+- `2 * floor(dmg) + 2` = `40` ✔️
 
 ---
 
@@ -55,10 +55,10 @@ Real output damage: `84`
 84
 ```
 
-- `floor(2 * dmg) + 1` = `84` 💚
-- `floor(2 * dmg) + 2` = `85` 💔
-- `2 * floor(dmg) + 1` = `83` 💔
-- `2 * floor(dmg) + 2` = `84` 💚
+- `floor(2 * dmg) + 1` = `84` ✔️
+- `floor(2 * dmg) + 2` = `85` ❌
+- `2 * floor(dmg) + 1` = `83` ❌
+- `2 * floor(dmg) + 2` = `84` ✔️
 
 ---
 
@@ -80,10 +80,10 @@ Real output damage: `46`
 46
 ```
 
-- `floor(2 * dmg) + 1` = `45` 💔
-- `floor(2 * dmg) + 2` = `46` 💚
-- `2 * floor(dmg) + 1` = `45` 💔
-- `2 * floor(dmg) + 2` = `46` 💚
+- `floor(2 * dmg) + 1` = `45` ❌
+- `floor(2 * dmg) + 2` = `46` ✔️
+- `2 * floor(dmg) + 1` = `45` ❌
+- `2 * floor(dmg) + 2` = `46` ✔️
 
 ---
 
@@ -103,7 +103,7 @@ Real output damage: `2`
 2
 ```
 
-- `floor(2 * dmg) + 1` = `1` 💔
-- `floor(2 * dmg) + 2` = `2` 💚
-- `2 * floor(dmg) + 1` = `1` 💔
-- `2 * floor(dmg) + 2` = `2` 💚
+- `floor(2 * dmg) + 1` = `1` ❌
+- `floor(2 * dmg) + 2` = `2` ✔️
+- `2 * floor(dmg) + 1` = `1` ❌
+- `2 * floor(dmg) + 2` = `2` ✔️
