@@ -44,7 +44,7 @@ Health: [115/161 hp (46 dmg)](../../res/rillaboom_02.png)
 
 ---
 
-**Target (dodged 55%) Sunny Earth Power vs Lvl50 13/13/13 Zacian**
+**Target (dodged 55%) Sunny Earth Power vs Lvl50 13/13/13 Crowned Sword Zacian**
 
 Health: [79/172 hp (93 dmg)](../../res/rillaboom_03.png)
 

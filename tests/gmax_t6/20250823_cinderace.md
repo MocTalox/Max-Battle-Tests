@@ -14,7 +14,7 @@ It is thought that its HP has been changed since last time as most of the other 
 
 ## Attack verification tests
 
-**Spread NWB Flamethrower vs Lvl40 11/15/14 Blissey**
+**Spread NWB Flamethrower vs Lvl40 11/15/14 Kabutops**
 
 Health: [115/133 hp (18 dmg)](../../res/cinderace_01.png)
 
@@ -29,7 +29,7 @@ Health: [115/133 hp (18 dmg)](../../res/cinderace_01.png)
 
 ---
 
-**Spread NWB Flamethrower vs Lvl50 13/13/13 Zacian**
+**Spread NWB Flamethrower vs Lvl50 13/13/13 Crowned Sword Zacian**
 
 Health: [118/172 hp (54 dmg)](../../res/cinderace_02.png)
 
