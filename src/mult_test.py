@@ -1,6 +1,7 @@
 from math import floor, ceil
 from functools import reduce
 from struct import pack, unpack
+from max_utils import is_number
 
 # Truncates value to float precision
 # Recursive with lists of values
@@ -12,11 +13,12 @@ def _to_float(x):
 	return list(map(_to_float, x))
 
 # Calculates output damage
-def _dmg(atk_stats, def_stats, bonus, extra_bonus):
+def _dmg(atk_stats, def_stats, bonus, extra_bonus, shroom):
 	attack = (atk_stats[1] + atk_stats[2]) * atk_stats[3]
 	defense = (def_stats[1] + 15) * def_stats[2]
 	raw = 0.5 * atk_stats[0] * attack / defense * atk_stats[4] * atk_stats[5] * atk_stats[6] * bonus
-	return floor(raw * extra_bonus) + 1
+	dmg = floor(raw * extra_bonus) + 1
+	return 2 * dmg if shroom else dmg
 
 # Calculates HP and remaining segments sequence
 def _hp_seq(total_hp, atks):
@@ -29,11 +31,9 @@ def _hp_seq(total_hp, atks):
 
 # Product of all bonuses, or itself if its a single value
 def _prod_bonus(x):
-	if type(x) == int or type(x) == float:
-		return x
-	return reduce(lambda a, b : a * b, x)
+	return x if is_number(x) else reduce(lambda a, b : a * b, x)
 
-def main(atk_stats, def_stats, bonus, atk_seq, seg_seq, start, end, step, inv = False):
+def main(atk_stats, def_stats, bonus, shroom, atk_seq, seg_seq, start, end, step, inv = False):
 	"""
 	Calculates an additional bonus value for a test (within the `start`-`end`-`step` range).
 	If `seg_seq` is informed, obtains the range of bonus values that satisfies that sequence.
@@ -43,6 +43,7 @@ def main(atk_stats, def_stats, bonus, atk_seq, seg_seq, start, end, step, inv = 
 	`atk_cpm`, `stab`, `type`, `weather`], one per each attack type.
 	- `def_stats`: List with [`total_hp`, `base_def`, `def_cpm`].
 	- `bonus`:     Static bonuses, list of `friend`, `helpers`, etc.
+	- `shroom`:    If Max Mushroom effect bonus is active.
 	- `atk_seq`:   Attacks sequence (index of the `atk_stats` list).
 	- `seg_seq`:   Segment drops sequence (can be `None`).
 	"""
@@ -54,7 +55,7 @@ def main(atk_stats, def_stats, bonus, atk_seq, seg_seq, start, end, step, inv = 
 	start, end = round(start * step), round(end * step)
 	for k in [x / step for x in range(start, end + 1)]:
 		fk = 1 / _to_float(k) if inv else _to_float(k)
-		dmgs = tuple(map(lambda s : _dmg(s, def_stats, bonus, fk), atk_stats))
+		dmgs = tuple(map(lambda s : _dmg(s, def_stats, bonus, fk, shroom), atk_stats))
 		segs = _hp_seq(def_stats[0], map(lambda atk : dmgs[atk], atk_seq))
 		segs = list(map(lambda n : segs[n - 1][1] - segs[n][1], range(1, len(segs))))
 		if seg_seq == None:

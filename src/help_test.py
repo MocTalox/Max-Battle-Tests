@@ -1,4 +1,5 @@
 from mult_test import main
+import sys
 
 # Test input data
 atk_stats = []
@@ -14,4 +15,5 @@ seg_seq = [67, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1,
 # Bonus values range config
 start, end, step = 1.199, 1.201, 0.000001
 
-main(atk_stats, def_stats, bonus, atk_seq, seg_seq, start, end, step)
+with open('output.txt', 'w') as sys.stdout:
+	main(atk_stats, def_stats, bonus, False, atk_seq, seg_seq, start, end, step)
