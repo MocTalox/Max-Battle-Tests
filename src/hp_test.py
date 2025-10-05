@@ -1,5 +1,19 @@
 from math import ceil
 
+def hp_lcm(limit, hits):
+	res = {}
+	for hp in lcm_x(limit, hits):
+		mults = tuple(map(lambda hit : ceil(hp / hit), hits))
+		if not any(map(lambda k : _is_mult_tuple(mults, k), res.keys())):
+			res.setdefault(mults, []).append(hp)
+	return [x for y in res.values() for x in y]
+
+def _is_mult_tuple(tar, src):
+	k = round(tar[0] / src[0])
+	mult_ind = lambda i, k : src[i] * k == tar[i]
+	mult_all = lambda n, k : all(map(lambda i : mult_ind(i, k), range(n)))
+	return any(map(lambda k : mult_all(len(tar), k), range(2, k + 1)))
+
 def lcm_x(limit, hits):
 	"""
 	Calculates the **LCM** of a list of int numbers `hits`, but with
