@@ -1,7 +1,7 @@
 from math import floor, ceil
 from functools import reduce
 from struct import pack, unpack
-from max_utils import is_number
+from .max_utils import is_number
 
 # Truncates value to float precision
 # Recursive with lists of values

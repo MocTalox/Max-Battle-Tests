@@ -28,7 +28,7 @@ def seg_print(dmg, hp):
 	"""
 	return print(seg_str(*seg_calc(dmg, hp)))
 
-def mult(res, base):
+def mult(res, base, inv = False):
 	"""
 	Calculates the possible multiplier values needed to produce the
 	resulting damage `res`, by being multiplied to a base damage `base`.
@@ -37,8 +37,8 @@ def mult(res, base):
 	- `floor(base * k) + 1 = res` (single dmg value)
 	- `res_min <= floor(base * k) + 1 <= res_max` (range of dmg values)
 	"""
-	return _mult_aux(res, res, base) if is_number(res) else _mult_aux(res[0], res[1], base)
+	return _mult_aux(res, res, base, inv) if is_number(res) else _mult_aux(res[0], res[1], base, inv)
 
 # Range of values which fulfill: `res_min <= floor(base * mult) + 1 <= res_max`
-def _mult_aux(res_min, res_max, base):
-	return (res_min - 1) / base, res_max / base
+def _mult_aux(res_min, res_max, base, inv = False):
+	return (base / res_max, base / (res_min - 1)) if inv else ((res_min - 1) / base, res_max / base)
