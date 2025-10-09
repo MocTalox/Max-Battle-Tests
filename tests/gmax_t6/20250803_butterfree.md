@@ -110,7 +110,7 @@ Attack CPM range: `0.760110` - `0.775013`
 Hits for first segment:
 - 200 hits
 
-> ↩️ Test reference on [Defense CPM tests](#defense-cpm-tests).
+> ↩️ Test reference on [Defense verification tests](#defense-verification-tests).
 
 HP value: A multiple of `200` (segment), `20k` (total)
 
