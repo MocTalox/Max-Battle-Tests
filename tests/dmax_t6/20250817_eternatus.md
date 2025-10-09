@@ -15,21 +15,23 @@ Eternatus Eternamax has an AtkCPM in the range `0.674608` - `0.675086`, a HP val
 
 ## Attack CPM tests
 
-**Spread NWB Dynamax Cannon (x2) vs Lvl50 15/12/13 Crowned Shield Zamazenta**
+**Spread NWB Dynamax Cannon (x2) vs Lvl50 15/12/13 Zamazenta**
 
 Health: [118/172 hp (57 dmg each)](../../res/eternatus_01.png)
 
-*Note: Lvl3 Max Guard gives +60 base hp*
+> 📝 Note: Lvl3 Max Guard gives +60 base HP.
 
-```python
->>> 0.5 * 215 * (251 + 15) / ((292 + 12) * 0.8403) * 1.2 * 0.625
-83.95439128882542
->>> from src.max_utils import mult
->>> mult(57, _)
+```py
+from src.max_utils import mult
+0.5 * 215 * (251 + 15) / ((292 + 12) * 0.8403) * 1.2 * 0.625
+mult(57, _)
+```
+
+```
 (0.6670288372093023, 0.6789400664451827)
 ```
 
-> AtkCPM range = `0.667028` - `0.678940`
+Attack CPM range: `0.667029` - `0.678940`
 
 ---
 
@@ -37,15 +39,17 @@ Health: [118/172 hp (57 dmg each)](../../res/eternatus_01.png)
 
 Health: 353/429 hp (76 dmg)
 
-```python
->>> 0.5 * 65 * (251 + 15) / ((169 + 15) * 0.8403) * 2
-111.82600417035323
->>> from src.max_utils import mult
->>> mult(76, _)
+```py
+from src.max_utils import mult
+0.5 * 65 * (251 + 15) / ((169 + 15) * 0.8403) * 2
+mult(76, _)
+```
+
+```
 (0.6706847888953152, 0.6796272527472528)
 ```
 
-> AtkCPM range = `0.670685` - `0.679627`
+Attack CPM range: `0.670685` - `0.679627`
 
 ---
 
@@ -53,15 +57,17 @@ Health: 353/429 hp (76 dmg)
 
 Health: [4/154 hp (150 dmg)](../../res/eternatus_02.png)
 
-```python
->>> 0.5 * 215 * (251 + 15) / ((189 + 15) * 0.761563838) * 1.2
-220.86905123368157
->>> from src.max_utils import mult
->>> mult(150, _)
+```py
+from src.max_utils import mult
+0.5 * 215 * (251 + 15) / ((189 + 15) * 0.761563838) * 1.2
+mult(150, _)
+```
+
+```
 (0.6746078690869033, 0.6791354386780906)
 ```
 
-> AtkCPM range = `0.674608` - `0.679135`
+Attack CPM range: `0.674608` - `0.679135`
 
 ---
 
@@ -69,15 +75,17 @@ Health: [4/154 hp (150 dmg)](../../res/eternatus_02.png)
 
 Health: [318/411 hp (93 dmg)](../../res/eternatus_03.png)
 
-```python
->>> 0.5 * 150 * (251 + 15) / ((169 + 12) * 0.8053)
-136.86948277056766
->>> from src.max_utils import mult
->>> mult(93, _)
+```py
+from src.max_utils import mult
+0.5 * 150 * (251 + 15) / ((169 + 12) * 0.8053)
+mult(93, _)
+```
+
+```
 (0.6721732130325814, 0.6794794436090225)
 ```
 
-> AtkCPM range = `0.672173` - `0.679479`
+Attack CPM range: `0.672174` - `0.679479`
 
 ---
 
@@ -85,15 +93,17 @@ Health: [318/411 hp (93 dmg)](../../res/eternatus_03.png)
 
 Health: [80/166 hp (86 dmg)](../../res/eternatus_04.png)
 
-```python
->>> 0.5 * 150 * (251 + 15) / ((173 + 14) * 0.8403)
-126.96000473474905
->>> from src.max_utils import mult
->>> mult(86, _)
+```py
+from src.max_utils import mult
+0.5 * 150 * (251 + 15) / ((173 + 14) * 0.8403)
+mult(86, _)
+```
+
+```
 (0.6695021804511279, 0.6773786766917294)
 ```
 
-> AtkCPM range = `0.669502` - `0.677379`
+Attack CPM range: `0.669503` - `0.677378`
 
 ---
 
@@ -101,15 +111,17 @@ Health: [80/166 hp (86 dmg)](../../res/eternatus_04.png)
 
 Health: [121/174 hp (53 dmg)](../../res/eternatus_05.png)
 
-```python
->>> 0.5 * 150 * (251 + 15) / ((181 + 14) * 0.7903) * 2 * 0.3
-77.67254888601214
->>> from src.max_utils import mult
->>> mult(53, _)
+```py
+from src.max_utils import mult
+0.5 * 150 * (251 + 15) / ((181 + 14) * 0.7903) * 2 * 0.3
+mult(53, _)
+```
+
+```
 (0.669477192982456, 0.6823517543859648)
 ```
 
-> AtkCPM range = `0.669477` - `0.682352`
+Attack CPM range: `0.669478` - `0.682351`
 
 ---
 
@@ -117,15 +129,17 @@ Health: [121/174 hp (53 dmg)](../../res/eternatus_05.png)
 
 Health: [109/136 hp (27 dmg)](../../res/eternatus_06.png)
 
-```python
->>> 0.5 * 85 * (251 + 15) / ((149 + 15) * 0.8103) * 1.2 * 0.390625
-39.87697081478404
->>> from src.max_utils import mult
->>> mult(27, _)
+```py
+from src.max_utils import mult
+0.5 * 85 * (251 + 15) / ((149 + 15) * 0.8103) * 1.2 * 0.390625
+mult(27, _)
+```
+
+```
 (0.6520053923042902, 0.6770825227775322)
 ```
 
-> AtkCPM range = `0.652005` - `0.677082`
+Attack CPM range: `0.652006` - `0.677082`
 
 ---
 
@@ -133,15 +147,17 @@ Health: [109/136 hp (27 dmg)](../../res/eternatus_06.png)
 
 Health: [91/191 hp (100 dmg)](../../res/eternatus_07.png)
 
-```python
->>> 0.5 * 85 * (251 + 15) / ((168 + 15) * 0.8053) * 1.2 * 1.6
-147.28652187454833
->>> from src.max_utils import mult
->>> mult(100, _)
+```py
+from src.max_utils import mult
+0.5 * 85 * (251 + 15) / ((168 + 15) * 0.8053) * 1.2 * 1.6
+mult(100, _)
+```
+
+```
 (0.6721592630473242, 0.6789487505528528)
 ```
 
-> AtkCPM range = `0.672159` - `0.678949`
+Attack CPM range: `0.672160` - `0.678948`
 
 ---
 
@@ -149,15 +165,17 @@ Health: [91/191 hp (100 dmg)](../../res/eternatus_07.png)
 
 Health: [101/159 hp (58 dmg)](../../res/eternatus_08.png)
 
-```python
->>> 0.5 * 85 * (251 + 15) / ((189 + 14) * 0.7903) * 1.2
-84.55976996950089
->>> from src.max_utils import mult
->>> mult(58, _)
+```py
+from src.max_utils import mult
+0.5 * 85 * (251 + 15) / ((189 + 14) * 0.7903) * 1.2
+mult(58, _)
+```
+
+```
 (0.6740794117647059, 0.6859053663570691)
 ```
 
-> AtkCPM range = `0.674079` - `0.685905`
+Attack CPM range: `0.674080` - `0.685905`
 
 ---
 
@@ -165,15 +183,17 @@ Health: [101/159 hp (58 dmg)](../../res/eternatus_08.png)
 
 Health: [180/200 hp (20 dmg)](../../res/eternatus_09.png)
 
-```python
->>> 0.5 * 85 * (251 + 15) / ((129 + 13) * 0.7903) * 1.2 * 0.244140625
-29.5128763613568
->>> from src.max_utils import mult
->>> mult(20, _)
+```py
+from src.max_utils import mult
+0.5 * 85 * (251 + 15) / ((129 + 13) * 0.7903) * 1.2 * 0.244140625
+mult(20, _)
+```
+
+```
 (0.6437867921568629, 0.6776703075335399)
 ```
 
-> AtkCPM range = `0.643787` - `0.677670`
+Attack CPM range: `0.643787` - `0.677670`
 
 ---
 
@@ -181,15 +201,17 @@ Health: [180/200 hp (20 dmg)](../../res/eternatus_09.png)
 
 Health: [113/146 hp (33 dmg)](../../res/eternatus_10.png)
 
-```python
->>> 0.5 * 65 * (251 + 15) / ((142 + 12) * 0.7903) * 0.625 * 1.2 * 2 * 0.45
-47.94640700309434
->>> from src.max_utils import mult
->>> mult(33, _)
+```py
+from src.max_utils import mult
+0.5 * 65 * (251 + 15) / ((142 + 12) * 0.7903) * 0.625 * 1.2 * 2 * 0.45
+mult(33, _)
+```
+
+```
 (0.6674118458539511, 0.688268466036887)
 ```
 
-> AtkCPM range = `0.667412` - `0.688268`
+Attack CPM range: `0.667412` - `0.688268`
 
 ---
 
@@ -197,15 +219,17 @@ Health: [113/146 hp (33 dmg)](../../res/eternatus_10.png)
 
 Health: [32/159 hp (127 dmg)](../../res/eternatus_11.png)
 
-```python
->>> 0.5 * 150 * (251 + 15) / ((159 + 15) * 0.7317) * 1.2
-188.0363631222519
->>> from src.max_utils import mult
->>> mult(127, _)
+```py
+from src.max_utils import mult
+0.5 * 150 * (251 + 15) / ((159 + 15) * 0.7317) * 1.2
+mult(127, _)
+```
+
+```
 (0.6700831578947368, 0.6754012781954887)
 ```
 
-> AtkCPM range = `0.670083` - `0.675401`
+Attack CPM range: `0.670084` - `0.675401`
 
 ---
 
@@ -213,33 +237,37 @@ Health: [32/159 hp (127 dmg)](../../res/eternatus_11.png)
 
 Health: [86/162 hp (76 dmg)](../../res/eternatus_12.png)
 
-```python
->>> 0.5 * 215 * (251 + 15) / ((228 + 14) * 0.7903) * 1.2 * 0.625
-112.13573044235739
->>> from src.max_utils import mult
->>> mult(76, _)
+```py
+from src.max_utils import mult
+0.5 * 215 * (251 + 15) / ((228 + 14) * 0.7903) * 1.2 * 0.625
+mult(76, _)
+```
+
+```
 (0.6688323133414933, 0.6777500775193799)
 ```
 
-> AtkCPM range = `0.668832` - `0.677750`
+Attack CPM range: `0.668833` - `0.677750`
 
 ---
 
-**Target NWB Dynamax Cannon vs Lvl40 15/13/15 Crowned Shield Zamazenta**
+**Target NWB Dynamax Cannon vs Lvl40 15/13/15 Zamazenta**
 
 Health: [102/163 hp (121 dmg)](../../res/eternatus_13.png)
 
-*Note: Lvl3 Max Guard gives +60 base hp*
+> 📝 Note: Lvl3 Max Guard gives +60 base HP.
 
-```python
->>> 0.5 * 215 * (251 + 15) / ((292 + 13) * 0.7903) * 1.2 * 0.625 * 2
-177.94653617738024
->>> from src.max_utils import mult
->>> mult(121, _)
+```py
+from src.max_utils import mult
+0.5 * 215 * (251 + 15) / ((292 + 13) * 0.7903) * 1.2 * 0.625 * 2
+mult(121, _)
+```
+
+```
 (0.6743598531211751, 0.6799795185638515)
 ```
 
-> AtkCPM range = `0.674360` - `0.679980`
+Attack CPM range: `0.674360` - `0.679979`
 
 ---
 
@@ -247,15 +275,17 @@ Health: [102/163 hp (121 dmg)](../../res/eternatus_13.png)
 
 Health: [73/147 hp (74 dmg)](../../res/eternatus_14.png)
 
-```python
->>> 0.5 * 85 * (251 + 15) / ((189 + 14) * 0.7317) * 1.2 * 1.2
-109.59833736268395
->>> from src.max_utils import mult
->>> mult(74, _)
+```py
+from src.max_utils import mult
+0.5 * 85 * (251 + 15) / ((189 + 14) * 0.7317) * 1.2 * 1.2
+mult(74, _)
+```
+
+```
 (0.6660684984520125, 0.6751927244582044)
 ```
 
-> AtkCPM range = `0.666068` - `0.675193`
+Attack CPM range: `0.666069` - `0.675192`
 
 ---
 
@@ -263,15 +293,17 @@ Health: [73/147 hp (74 dmg)](../../res/eternatus_14.png)
 
 Health: [79/252 hp (173 dmg)](../../res/eternatus_15.png)
 
-```python
->>> 0.5 * 215 * (251 + 15) / ((169 + 14) * 0.7317) * 1.2
-256.26376482344057
->>> from src.max_utils import mult
->>> mult(173, _)
+```py
+from src.max_utils import mult
+0.5 * 215 * (251 + 15) / ((169 + 14) * 0.7317) * 1.2
+mult(173, _)
+```
+
+```
 (0.6711834586466165, 0.6750856880573527)
 ```
 
-> AtkCPM range = `0.671183` - `0.675086`
+Attack CPM range: `0.671184` - `0.675085`
 
 ---
 
@@ -279,38 +311,43 @@ Health: [79/252 hp (173 dmg)](../../res/eternatus_15.png)
 
 Health: [87/252 hp (165 dmg)](../../res/eternatus_16.png)
 
-```python
->>> 0.5 * 85 * (251 + 15) / ((169 + 14) * 0.7317) * 1.2 * 1.2 * 2
-243.15259546038078
->>> from src.max_utils import mult
->>> mult(165, _)
+```py
+from src.max_utils import mult
+0.5 * 85 * (251 + 15) / ((169 + 14) * 0.7317) * 1.2 * 1.2 * 2
+mult(165, _)
+```
+
+```
 (0.6744735736399825, 0.6785862173816897)
 ```
 
-> AtkCPM range = `0.674474` - `0.678586`
+Attack CPM range: `0.674474` - `0.678586`
 
 ## HP tests
 
-Hits for 1st segment:
+Hits for first segment:
 - [75 hits](https://youtu.be/nE_TCHLM0Tk)
 - 300 hits
 - 150 hits
 - 120 hits
 - 200 hits
 
-```python
->>> from src.hp_test import hp_lcm
->>> hp_lcm(10000, [75, 300, 150, 120, 200])
+> ↩️ Test references on [Defense CPM tests](#defense-cpm-tests).
+
+```py
+from src.hp_test import hp_lcm
+hp_lcm(10000, [75, 300, 150, 120, 200])
+```
+
+```
 [599, 600]
 ```
 
-> Expected segment HP: `600` or a multiple.
->
-> Expected HP value: `600 * 100` = `60000` (`60k`) or a multiple.
+HP value: `600` (segment), `60k` (total)
 
 ## Defense CPM tests
 
-**Lvl50 15atk Crowned Shield Zamazenta (Metal Claw, Behemoth Bash(+3)) + Lvl50 15atk Latios (Lvl3 Max Wyrmwind, Dragon Breath), NWB, FB4, 4 helpers, Blade x5, Shroom** ([battle](https://youtu.be/nE_TCHLM0Tk))
+**Lvl50 15atk Zamazenta (Metal Claw, Behemoth Bash(+3)) + Lvl50 15atk Latios (Lvl3 Max Wyrmwind, Dragon Breath), NWB, FB4, 4 helpers, Blade x5, Shroom** ([battle](https://youtu.be/nE_TCHLM0Tk))
 
 Segments sequence:
 - Segment #1:
@@ -328,11 +365,12 @@ Segments sequence:
 - Segment #9:
   - 8 Dragon Breath
 
-*Note: Behemoth Bash power at T3 of Go Pass: Max Finale was 143.75 (+15%).*
+> 📝 Note: Behemoth Bash power at T3 of Go Pass: Max Finale was 143.75 (+15%).
 
-*Note: Blade Boost bonus at T3 of Go Pass: Max Finale was x5 times effective (+25%).*
+> 📝 Note: Blade Boost bonus at T3 of Go Pass: Max Finale was x5 times effective (+25%).
 
-```python
+```py
+# Use this code in src/def_test.py
 atk_stats = []
 atk_stats.append([6, 250, 15, 0.8403, 1.2, 1.0, 1.0])
 atk_stats.append([143.75, 250, 15, 0.8403, 1.2, 1.0, 1.0])
@@ -344,12 +382,12 @@ atk_seq = [0] * 80 + [1] * 4 + [0] * 6 + [2] * 6 + [3] * 8
 # Shroom flag -> True
 ```
 
-> Attacks Damage:
-> - Metal Claw: `8`
-> - Behemoth Bash: `160`
-> - Max Wyrmwind: `664` or `666`
-> - Dragon Breath: `12`
->
-> DefCPM Range: `0.749085` - `0.753205`
->
-> *Note: Using `60k` total hp.*
+Attacks Damage:
+- Metal Claw: `8`
+- Behemoth Bash: `160`
+- Max Wyrmwind: `664` or `666`
+- Dragon Breath: `12`
+
+Defense CPM range: `0.749085` - `0.753205`
+
+> 📝 Note: Using `60k` total HP.
