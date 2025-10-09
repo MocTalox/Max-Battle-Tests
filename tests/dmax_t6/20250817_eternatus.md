@@ -393,3 +393,35 @@ Attacks Damage:
 Defense CPM range: `0.749085` - `0.753205`
 
 > 📝 Note: Using `60k` total HP.
+
+---
+
+**Lvl35 15atk & 14atk Excadrill (Mud Shot), NWB, FB4, 1 helper**
+
+First segment: 200 hits (3 dmg)
+
+> 🛠️ Dev note: Included to reference HP tests. Too lazy to document, because results were poo 💩
+
+---
+
+**Lvl40 15atk & 14atk Blissey (Pound), NWB, FB4, 0 helpers**
+
+First segment: 300 hits (2 dmg)
+
+> 🛠️ Dev note: Included to reference HP tests. Too lazy to document, because results were poo 💩
+
+---
+
+**Lvl50 15atk Zacian (Metal Claw), NWB, 40 helpers**
+
+First segment: 150 hits (4 dmg)
+
+> 🛠️ Dev note: Included to reference HP tests. Too lazy to document, because results were poo 💩
+
+---
+
+**Lvl50 15atk Zacian (Metal Claw), NWB, 40 helpers, Blade**
+
+First segment: 120 hits (5 dmg)
+
+> 🛠️ Dev note: Included to reference HP tests. Too lazy to document, because results were poo 💩
