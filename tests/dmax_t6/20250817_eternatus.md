@@ -2,16 +2,18 @@
 
 Eternatus Eternamax was available in T6 Dynamax Battles on August 17th in-person on Anaheim during the *2025 Pokémon World Championships Celebration* event. Later it became available on August 23rd and 24th globaly during the *Go Fest: Max Finale* event. No tests were done on the in-person event, but some analysis revealed that the stats remained the same during both events.
 
-## Result
+## Summary
 
-Eternatus Eternamax has an AtkCPM in the range `0.674608` - `0.675086`, a HP value of `60k` and a DefCPM in the range `0.749085` - `0.753205`, which means it has a CPM of `0.75` and AtkMult of `0.9`:
+Eternatus Eternamax has an Attack CPM value in the range `0.674608` - `0.675086`, a HP value of `60k` and a Defense CPM value in the range `0.749085` - `0.753205`, which means it has a CPM of `0.75` and AtkMult of `0.9`:
 
-- HP: `60k`
-- CPM: `0.75`
-- AtkMult: `0.9`
-- DefMult: `1.0`
-- AtkCPM: `0.675`
-- DefCPM: `0.75`
+Stats     | Values
+:-------- | :------
+HP        | `60k`
+CPM       | `0.75`
+*AtkMult* | `0.9`
+*DefMult* | `1.0`
+*AtkCPM*  | `0.675`
+*DefCPM*  | `0.75`
 
 ## Attack CPM tests
 
