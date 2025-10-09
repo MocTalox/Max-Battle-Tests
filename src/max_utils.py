@@ -7,26 +7,21 @@ def is_number(x):
 	return type(x) == int or type(x) == float
 
 
-def seg_calc(dmg, hp):
+def seg(dmg, hits, hp):
 	"""
 	Converts the damage to segments:
-	- First:  Number of segments.
-	- Second: Extra damage done to next segment.
-	- Third:  Total damage (same as input `dmg`).
-	"""
-	return (floor(dmg / hp), dmg % hp, dmg)
+	- `Seg`:   Number of segments.
+	- `Extra`: Extra damage done to next segment.
+	- `Total`: Total damage.
 
-def seg_str(s, xd, td):
+	The parameters are:
+	- `dmg`:  Tuple with the damage for each attack.
+	- `hits`: Tuple with number of hits for each attack.
+	- `hp`: Total HP value.
 	"""
-	Converts `seg_calc` result to readable string.
-	"""
-	return "Seg: " + str(s) + " | Extra: " + str(xd) + " dmg | Total: " + str(td) + " dmg\n"
-
-def seg_print(dmg, hp):
-	"""
-	Prints `seg_str` result to output file.
-	"""
-	return print(seg_str(*seg_calc(dmg, hp)))
+	dmg = sum(x * y for x, y in zip(dmg, hits))
+	s, xd, td = (floor(dmg / hp), dmg % hp, dmg)
+	return "Seg: " + str(s) + " | Extra: " + str(xd) + " dmg | Total: " + str(td) + " dmg"
 
 def mult(res, base, inv = False):
 	"""
