@@ -19,6 +19,8 @@ def seg(dmg, hits, hp):
 	- `hits`: Tuple with number of hits for each attack.
 	- `hp`: Total HP value.
 	"""
+	dmg = (dmg,) if type(dmg) == int else dmg
+	hits = (hits,) if type(hits) == int else hits
 	dmg = sum(x * y for x, y in zip(dmg, hits))
 	s, xd, td = (floor(dmg / hp), dmg % hp, dmg)
 	return "Seg: " + str(s) + " | Extra: " + str(xd) + " dmg | Total: " + str(td) + " dmg"
