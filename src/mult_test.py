@@ -1,16 +1,5 @@
 from math import floor, ceil
-from functools import reduce
-from struct import pack, unpack
-from .max_utils import is_number
-
-# Truncates value to float precision
-# Recursive with lists of values
-def _to_float(x):
-	if type(x) == int:
-		return x
-	if type(x) == float:
-		return unpack('f', pack('f', x))[0]
-	return list(map(_to_float, x))
+from py_utils import spf, prod
 
 # Calculates output damage
 def _dmg(atk_stats, def_stats, bonus, extra_bonus, shroom):
@@ -29,10 +18,6 @@ def _hp_seq(total_hp, atks):
 		res.append((hp, ceil(100 * hp / total_hp)))
 	return res
 
-# Product of all bonuses, or itself if its a single value
-def _prod_bonus(x):
-	return x if is_number(x) else reduce(lambda a, b : a * b, x)
-
 def main(atk_stats, def_stats, bonus, shroom, atk_seq, seg_seq, start, end, step, inv = False):
 	"""
 	Calculates an additional bonus value for a test (within the `start`-`end`-`step` range).
@@ -48,13 +33,13 @@ def main(atk_stats, def_stats, bonus, shroom, atk_seq, seg_seq, start, end, step
 	- `seg_seq`:   Segment drops sequence (can be `None`).
 	"""
 	res_range = {}
-	atk_stats = _to_float(atk_stats)
-	def_stats = _to_float(def_stats)
-	bonus = _prod_bonus(_to_float(bonus))
+	atk_stats = spf(atk_stats)
+	def_stats = spf(def_stats)
+	bonus = prod(spf(bonus))
 	step = round(1 / step)
 	start, end = round(start * step), round(end * step)
 	for k in [x / step for x in range(start, end + 1)]:
-		fk = 1 / _to_float(k) if inv else _to_float(k)
+		fk = 1 / spf(k) if inv else spf(k)
 		dmgs = tuple(map(lambda s : _dmg(s, def_stats, bonus, fk, shroom), atk_stats))
 		segs = _hp_seq(def_stats[0], map(lambda atk : dmgs[atk], atk_seq))
 		segs = list(map(lambda n : segs[n - 1][1] - segs[n][1], range(1, len(segs))))

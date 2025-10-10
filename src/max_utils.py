@@ -1,11 +1,5 @@
 from math import floor
-
-def is_number(x):
-	"""
-	Checks if a value `x` is a real number (`int` or `float`).
-	"""
-	return type(x) == int or type(x) == float
-
+from py_utils import is_type
 
 def seg(dmg, hits, hp):
 	"""
@@ -19,8 +13,8 @@ def seg(dmg, hits, hp):
 	- `hits`: Tuple with number of hits for each attack.
 	- `hp`: Total HP value.
 	"""
-	dmg = (dmg,) if type(dmg) == int else dmg
-	hits = (hits,) if type(hits) == int else hits
+	dmg = (dmg,) if is_type(dmg, int) else dmg
+	hits = (hits,) if is_type(hits, int) else hits
 	dmg = sum(x * y for x, y in zip(dmg, hits))
 	s, xd, td = (floor(dmg / hp), dmg % hp, dmg)
 	return "Seg: " + str(s) + " | Extra: " + str(xd) + " dmg | Total: " + str(td) + " dmg"
@@ -34,7 +28,7 @@ def mult(res, base, inv = False):
 	- `floor(base * k) + 1 = res` (single dmg value)
 	- `res_min <= floor(base * k) + 1 <= res_max` (range of dmg values)
 	"""
-	return _mult_aux(res, res, base, inv) if is_number(res) else _mult_aux(res[0], res[1], base, inv)
+	return _mult_aux(res, res, base, inv) if is_type(res, int) else _mult_aux(res[0], res[1], base, inv)
 
 # Range of values which fulfill: `res_min <= floor(base * mult) + 1 <= res_max`
 def _mult_aux(res_min, res_max, base, inv = False):
