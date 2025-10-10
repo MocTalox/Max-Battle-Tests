@@ -4,7 +4,7 @@ Butterfree was available in T6 Gigantamax Battles on August 3rd globaly during t
 
 ## Summary
 
-Butterfree has an Attack CPM value in the range `0.761276` - `0.774019`, and supposedly a HP value of `100k` and a Defense CPM value of `0.85`, which means it has a CPM of `0.85` and an Attack Multiplier of `0.9`:
+Butterfree has an Attack CPM value in the range `0.761276` - `0.774019`, and very likely a HP value of `100k` and a Defense CPM value of `0.85`, which means it has a CPM of `0.85` and an Attack Multiplier of `0.9`:
 
 Stats     | Values
 :-------- | :------
