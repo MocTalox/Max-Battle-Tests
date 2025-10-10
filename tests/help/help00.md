@@ -12,13 +12,14 @@ Potential Bonus Value: `1.0`
 
 Sequence: `[62, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1]`
 
-```python
-atkStats = []
-atkStats.append([350, 240, 15, 0.5974, 1.2, 0.625, 1.0])
-atkStats.append([5, 76, 15, 0.517393947, 1.2, 1.0, 1.0])
-defStats = [1700, 111, 0.15]
+```py
+# Use this code in src/help_test.py
+atk_stats = []
+atk_stats.append([350, 240, 15, 0.5974, 1.2, 0.625, 1.0])
+atk_stats.append([5, 76, 15, 0.517393947, 1.2, 1.0, 1.0])
+def_stats = [1700, 111, 0.15]
 bonus = 1.0
-atkSeq = [0] + [1] * 28
+atk_seq = [0] + [1] * 28
 ```
 
 Attacks Damage: `[{1058}, {8}]`

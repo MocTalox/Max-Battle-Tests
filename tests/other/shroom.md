@@ -1,4 +1,4 @@
-# Max Mushroom bonus
+# Max Mushroom Bonus
 
 Max Mushroom description states that *it **doubles** the damage your Pokémon deal in Max Battles*, but how does it double the damage? In this section we will covers several possibilities for Max Mushroom boost and put them to the test to see which one is correct in every possible scenario.
 
@@ -16,17 +16,18 @@ The function `2 * floor(_) + 2`, or more precisely `2 * (floor(_) + 1)`, is the 
 
 Real output damage: `40`
 
-```python
->>> 0.5 * 4 * ((255 + 15) * 0.7903) / ((67 + 15) * 0.15) * 1.2 * 0.390625 * 1.2
-19.516554878048783
->>> dmg = _
->>> floor(2 * dmg) + 1
+```py
+dmg = 0.5 * 4 * ((255 + 15) * 0.7903) / ((67 + 15) * 0.15) * 1.2 * 0.390625 * 1.2
+floor(2 * dmg) + 1
+floor(2 * dmg) + 2
+2 * floor(dmg) + 1
+2 * floor(dmg) + 2
+```
+
+```
 40
->>> floor(2 * dmg) + 2
 41
->>> 2 * floor(dmg) + 1
 39
->>> 2 * floor(dmg) + 2
 40
 ```
 
@@ -39,44 +40,46 @@ Real output damage: `40`
 
 **Lvl40 15atk Excadrill (Mud Shot) vs Sobble (T1), NWB, NFB, 2 helpers** ([battle](https://www.youtube.com/watch?v=HvUw3ArgogU&list=PLNBtbhpo4y2qTTY30CbyMVOxznpiyfBUF&index=4))
 
-Real output damage: `84`
+Real output damage: `81` to `84`
 
-```python
->>> 0.5 * 4 * ((255 + 15) * 0.7903) / ((79 + 15) * 0.15) * 1.2 * 1.15
-41.76819574468085
->>> dmg = _
->>> floor(2 * dmg) + 1
+```py
+dmg = 0.5 * 4 * ((255 + 15) * 0.7903) / ((79 + 15) * 0.15) * 1.2 * 1.15
+floor(2 * dmg) + 1
+floor(2 * dmg) + 2
+2 * floor(dmg) + 1
+2 * floor(dmg) + 2
+```
+
+```
 84
->>> floor(2 * dmg) + 2
 85
->>> 2 * floor(dmg) + 1
 83
->>> 2 * floor(dmg) + 2
 84
 ```
 
 - `floor(2 * dmg) + 1` = `84` ✔️
 - `floor(2 * dmg) + 2` = `85` ❌
-- `2 * floor(dmg) + 1` = `83` ❌
+- `2 * floor(dmg) + 1` = `83` ✔️
 - `2 * floor(dmg) + 2` = `84` ✔️
 
 ---
 
 **Lvl40 14atk Rillaboom (Scratch) vs Gastly (T1), NWB, NFB, 3 helpers** ([battle](https://www.youtube.com/watch?v=ZmObrVYczUk&list=PLNBtbhpo4y2qTTY30CbyMVOxznpiyfBUF&index=3))
 
-Real output damage: `46`
+Real output damage: `46` or `47`
 
-```python
->>> 0.5 * 6 * ((239 + 14) * 0.7903) / ((67 + 15) * 0.15) * 0.390625 * 1.17
-22.288176733993904
->>> dmg = _
->>> floor(2 * dmg) + 1
+```py
+dmg = 0.5 * 6 * ((239 + 14) * 0.7903) / ((67 + 15) * 0.15) * 0.390625 * 1.17
+floor(2 * dmg) + 1
+floor(2 * dmg) + 2
+2 * floor(dmg) + 1
+2 * floor(dmg) + 2
+```
+
+```
 45
->>> floor(2 * dmg) + 2
 46
->>> 2 * floor(dmg) + 1
 45
->>> 2 * floor(dmg) + 2
 46
 ```
 
@@ -91,15 +94,18 @@ Real output damage: `46`
 
 Real output damage: `2`
 
-```python
->>> dmg = 0
->>> floor(2 * dmg) + 1
+```py
+dmg = 0
+floor(2 * dmg) + 1
+floor(2 * dmg) + 2
+2 * floor(dmg) + 1
+2 * floor(dmg) + 2
+```
+
+```
 1
->>> floor(2 * dmg) + 2
 2
->>> 2 * floor(dmg) + 1
 1
->>> 2 * floor(dmg) + 2
 2
 ```
 
