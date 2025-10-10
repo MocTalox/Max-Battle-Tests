@@ -4,7 +4,7 @@ Eternatus Eternamax was available in T6 Dynamax Battles on August 17th in-person
 
 ## Summary
 
-Eternatus Eternamax has an Attack CPM value in the range `0.674608` - `0.675086`, a HP value of `60k` and a Defense CPM value in the range `0.749085` - `0.753205`, which means it has a CPM of `0.75` and AtkMult of `0.9`:
+Eternatus Eternamax has an Attack CPM value in the range `0.674608` - `0.675085`, a HP value of `60k` and a Defense CPM value in the range `0.749085` - `0.753205`, which means it has a CPM of `0.75` and AtkMult of `0.9`:
 
 Stats     | Values
 :-------- | :------

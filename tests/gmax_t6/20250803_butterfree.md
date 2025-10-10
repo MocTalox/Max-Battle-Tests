@@ -110,11 +110,11 @@ Attack CPM range: `0.760110` - `0.775013`
 Hits for first segment:
 - 200 hits
 
-> ↩️ Test reference on [Defense verification tests](#defense-verification-tests).
+> ↩️ Test reference bellow.
 
 HP value: A multiple of `200` (segment), `20k` (total)
 
-## Defense verification tests
+---
 
 **Lvl50 15atk Blissey (Pound), NWB, 18 helpers**
 
@@ -136,6 +136,10 @@ floor(_) + 1
 
 The first segment flips at 200 hits, which means the HP value is `1000` (segment), `100k` (total).
 
+## Defense verification tests
+
+> 📝 Note: Using `0.85` Defense CPM and `100k` total HP.
+
 ---
 
 **Lvl50 15atk Zamazenta (Metal Claw, Behemoth Bash) + Lvl51 15atk Cinderace (Lv3 G-Max Fireball, Tackle), Sunny, FB4, 39 helpers** ([battle](https://youtu.be/xiE5sXMGp58))
@@ -145,8 +149,6 @@ Attacks damage:
 - Behemoth Bash: `171` dmg
 - G-Max Fireball: `1133` dmg
 - Tackle: `6` dmg
-
-> 📝 Note: Using `0.85` Defense CPM.
 
 ```py
 # Metal Claw
@@ -197,8 +199,6 @@ Segments sequence:
   - 11 Tackle
   - 52 Metal Claw
 
-> 📝 Note: Using `100k` total HP.
-
 ```py
 from src.max_utils import seg
 dmg = (9, 171, 1133, 6)
@@ -233,8 +233,6 @@ Attacks damage:
 - Metal Claw: `7` dmg
 - G-Max Fireball: `736` dmg
 - Tackle: `5` dmg
-
-> 📝 Note: Using `0.85` Defense CPM.
 
 ```py
 # Metal Claw (14atk)
@@ -273,8 +271,6 @@ Segments sequence:
   - 15 Tackle
   - 14(+2?) Metal Claw
 
-> 📝 Note: Using `100k` total HP.
-
 ```py
 from src.max_utils import seg
 dmg = (7, 736, 5)
@@ -300,8 +296,6 @@ All the segments flip at the expected moment ✔️
 Attacks damage:
 - Metal Claw: `14` dmg
 - G-Max Fireball: `1564` dmg
-
-> 📝 Note: Using `0.85` Defense CPM.
 
 ```py
 # Metal Claw (Lvl50 15atk)
@@ -335,8 +329,6 @@ Segments sequence:
   - 1 G-Max Fireball
 - Segment #6:
   - 4 Metal Claw
-
-> 📝 Note: Using `100k` total HP.
 
 ```py
 from src.max_utils import seg

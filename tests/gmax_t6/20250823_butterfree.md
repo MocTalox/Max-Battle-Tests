@@ -8,11 +8,13 @@ Butterfree has the same stats as [last time](./20250803_butterfree.md):
 
 ## Attack verification tests
 
+> 📝 Note: Using `0.765` Attack CPM.
+
+---
+
 **Spread NWB Bug Buzz vs Lvl20 12/14/15 Latias**
 
 Health: [40/122 hp (82 dmg)](../../res/butterfree_01.png)
-
-> 📝 Note: Using `0.765` Attack CPM.
 
 ```py
 0.5 * 95 * ((167 + 15) * 0.765) / ((246 + 14) * 0.5974) * 1.2 * 1.6
@@ -27,13 +29,15 @@ The damage is the expected ✔️
 
 ## Defense verification tests
 
+> 📝 Note: Using `0.85` Defense CPM and `100k` total HP.
+
+---
+
 **Lvl40 15atk & 14atk Blissey (Pound), NWB, FB4, 2 helpers**
 
 Attacks damage:
 - Pound (15atk): `5` dmg
 - Pound (14atk): `4` dmg
-
-> 📝 Note: Using `0.85` Defense CPM.
 
 ```py
 # Pound (15atk)
@@ -54,8 +58,6 @@ Segments sequence:
 - Segment #1:
   - 113 Pound (15atk)
   - 109 Pound (14atk)
-
-> 📝 Note: Using `100k` total HP.
 
 ```py
 from src.max_utils import seg

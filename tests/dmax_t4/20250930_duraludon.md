@@ -113,6 +113,10 @@ HP value: `200` (segment), `20k` (total)
 
 ## Defense CPM tests
 
+> 📝 Note: Using `20k` total HP.
+
+---
+
 **Lvl20 14/12/12 Machamp (Lvl2 G-Max Chi Strike, Counter), NWB, 24 helpers** ([battle](https://youtu.be/IOMIv4loZ-M))
 
 Segments sequence:
@@ -153,17 +157,13 @@ Attacks Damage:
 - Chi Strike: `566` to `571` dmg
 - Counter: `19` dmg
 
-Defense CPM Range: `0.597811` - `0.604158`
-
-> 📝 Note: Using `20k` total HP.
+Defense CPM range: `0.597811` - `0.604158`
 
 ---
 
-**Lvl50 15/15/15 Crowned Sword Zacian (Metal Claw), NWB, 7 helpers**
+**Lvl50 15/15/15 Zacian (Metal Claw), NWB, 7 helpers**
 
 First segment: 29 hits (7 dmg)
-
-> 📝 Note: Using `20k` total HP.
 
 ```py
 from src.max_utils import mult
@@ -175,15 +175,13 @@ mult(7, _, True)
 (0.5585918258571428, 0.6516904635)
 ```
 
-Defense CPM Range: `0.558592` - `0.651690`
+Defense CPM range: `0.558592` - `0.651690`
 
 ---
 
-**Lvl40 15/13/15 Crowned Sword Zacian (Metal Claw), NWB, 0 helpers**
+**Lvl40 15/13/15 Zacian (Metal Claw), NWB, 0 helpers**
 
 First segment: 34 hits (6 dmg)
-
-> 📝 Note: Using `20k` total HP.
 
 ```py
 from src.max_utils import mult
@@ -195,15 +193,13 @@ mult(6, _, True)
 (0.5141889375, 0.617026725)
 ```
 
-Defense CPM Range: `0.514189` - `0.617026`
+Defense CPM range: `0.514189` - `0.617026`
 
 ---
 
-**Lvl40 15/13/15 Crowned Shield Zamazenta (Metal Claw), NWB, 0 helpers**
+**Lvl40 15/13/15 Zamazenta (Metal Claw), NWB, 0 helpers**
 
 First segment: 50 hits (4 dmg)
-
-> 📝 Note: Using `20k` total HP.
 
 ```py
 from src.max_utils import mult
@@ -215,15 +211,13 @@ mult(4, _, True)
 (0.58902046875, 0.785360625)
 ```
 
-Defense CPM Range: `0.589021` - `0.785360`
+Defense CPM range: `0.589021` - `0.785360`
 
 ---
 
-**Lvl40 15/13/15 Crowned Shield Zamazenta (Metal Claw), NWB, 2 helpers**
+**Lvl40 15/13/15 Zamazenta (Metal Claw), NWB, 2 helpers**
 
 First segment: 40 hits (5 dmg)
-
-> 📝 Note: Using `20k` total HP.
 
 ```py
 from src.max_utils import mult
@@ -235,4 +229,4 @@ mult(5, _, True)
 (0.5418988312499999, 0.6773735390625)
 ```
 
-Defense CPM Range: `0.541899` - `0.677373`
+Defense CPM range: `0.541899` - `0.677373`
