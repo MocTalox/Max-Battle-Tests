@@ -1,5 +1,5 @@
 from math import floor, ceil
-from py_utils import spf, prod
+from src.py_utils import spf, prod
 
 # Calculates output damage
 def _dmg(atk_stats, def_stats, bonus, extra_bonus, shroom):

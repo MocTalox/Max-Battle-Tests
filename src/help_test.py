@@ -1,4 +1,4 @@
-from mult_test import main
+from src.mult_test import main
 import sys
 
 # Test input data

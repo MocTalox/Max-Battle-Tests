@@ -1,5 +1,5 @@
 from math import floor
-from py_utils import is_type
+from src.py_utils import is_type
 
 def seg(dmg, hits, hp):
 	"""
