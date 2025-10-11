@@ -2,6 +2,9 @@ from functools import reduce
 from struct import pack, unpack
 
 def is_type(x, *types):
+	"""
+	Checks if the value is of any of the given types.
+	"""
 	return any(map(lambda t : type(x) == t, types))
 
 def spf(x):
