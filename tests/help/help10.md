@@ -12,13 +12,14 @@ Potential Bonus Value: `1.195` (as double `1.1950000524520874`)
 
 Sequence: `[95, 1, 0, 1, 0, 1, 0, 1, 0, 1]`
 
-```python
-atkStats = []
-atkStats.append([250, 171, 15, 0.694143653, 1.2, 1.0, 1.0])
-atkStats.append([15, 17, 12, 0.5974, 1.2, 0.625, 1.0])
-defStats = [1700, 80, 0.15]
+```py
+# Use this code in src/help_test.py
+atk_stats = []
+atk_stats.append([250, 171, 15, 0.694143653, 1.2, 1.0, 1.0])
+atk_stats.append([15, 17, 12, 0.5974, 1.2, 0.625, 1.0])
+def_stats = [1700, 80, 0.15]
 bonus = 1.0
-atkSeq = [0] + [1] * 9
+atk_seq = [0] + [1] * 9
 ```
 
 Attacks Damage: `[{1623, 1624, 1625, 1626, 1627}, {9}]`
@@ -31,13 +32,14 @@ Bonus Values Range: `1.193472` - `1.197150`
 
 Sequence: `[90, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]`
 
-```python
-atkStats = []
-atkStats.append([250, 171, 13, 0.667934, 1.2, 1.0, 1.0])
-atkStats.append([15, 17, 13, 0.5974, 1.2, 0.625, 1.0])
-defStats = [1700, 80, 0.15]
+```py
+# Use this code in src/help_test.py
+atk_stats = []
+atk_stats.append([250, 171, 13, 0.667934, 1.2, 1.0, 1.0])
+atk_stats.append([15, 17, 13, 0.5974, 1.2, 0.625, 1.0])
+def_stats = [1700, 80, 0.15]
 bonus = 1.0
-atkSeq = [0] + [1] * 18
+atk_seq = [0] + [1] * 18
 ```
 
 Attacks Damage: `[{1546}, {9}]`
@@ -50,13 +52,14 @@ Bonus Values Range: `1.194266` - `1.195038`
 
 Sequence: `[91, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1]`
 
-```python
-atkStats = []
-atkStats.append([350, 171, 10, 0.706884205, 1.2, 1.0, 1.0])
-atkStats.append([15, 17, 14, 0.5974, 1.2, 0.625, 1.0])
-defStats = [1700, 122, 0.15]
+```py
+# Use this code in src/help_test.py
+atk_stats = []
+atk_stats.append([350, 171, 10, 0.706884205, 1.2, 1.0, 1.0])
+atk_stats.append([15, 17, 14, 0.5974, 1.2, 0.625, 1.0])
+def_stats = [1700, 122, 0.15]
 bonus = 1.0
-atkSeq = [0] + [1] * 20
+atk_seq = [0] + [1] * 20
 ```
 
 Attacks Damage: `[{1563}, {7}]`
