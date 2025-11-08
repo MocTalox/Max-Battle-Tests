@@ -197,7 +197,7 @@ All the segments flip at the expected moment ✔️
 
 ---
 
-**Grimmsnarl Duo Battle: Clear, FB4, 9 helpers, Shroom** ([battle 1](https://youtu.be/1XUpFHw4pn4), [battle 2](https://www.youtube.com/shorts/8ZhpOgAS4Qs))
+**Grimmsnarl Duo Battle: Clear, FB4, 9 helpers, Shroom** ([battle 1](https://youtu.be/p8Rwb0XunlY), [battle 2](https://www.youtube.com/shorts/8ZhpOgAS4Qs))
 
 Attacks damage:
 - Lvl50 15atk Zamazenta
@@ -286,35 +286,6 @@ Seg: 9 | Extra: 182 dmg | Total: 6482 dmg
 Seg: 13 | Extra: 114 dmg | Total: 9214 dmg
 Seg: 17 | Extra: 46 dmg | Total: 11946 dmg
 Seg: 18 | Extra: 18 dmg | Total: 12618 dmg
-```
-
-All the segments flip at the expected moment ✔️
-
----
-
-**Grimmsnarl Solo Test: NWB, 15+ helpers** ([battle](https://youtu.be/yRSTG8lUuRE))
-
-Attacks damage:
-- Lvl50 15atk Zacian
-  - Metal Claw: `11` dmg
-
-```py
-# Metal Claw
-0.5 * 6 * ((332 + 15) * 0.8403) / ((139 + 15) * 1.2) * 1.2 * 1.6 * 1.2
-floor(_) + 1
-```
-
-Segments sequence:
-- Segment #1:
-  - 64 Metal Claw
-
-```py
-from src.max_utils import seg
-print(seg(11, 64, 700))
-```
-
-```
-Seg: 1 | Extra: 4 dmg | Total: 704 dmg
 ```
 
 All the segments flip at the expected moment ✔️
