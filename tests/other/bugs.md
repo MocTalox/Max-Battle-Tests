@@ -47,7 +47,7 @@ Segments sequence:
 - Segments #1 & #2:
   - 103 Mud Shot
   - 1 Max Quake (14atk)
-  - 5 Max Quake (15atk) # Duplicte 2 on the first turn
+  - 5 Max Quake (15atk) # Duplicate 2 on the first turn
 - Segments #3 & #4:
   - 1 Max Quake (14atk)
   - 3 Max Quake (15atk)
@@ -113,7 +113,7 @@ Segments sequence:
   - 3 Max Quake (15atk)
 - Segments #34 & #35:
   - 1 Max Quake (14atk)
-  - 5 Max Quake (15atk) # Duplicte 2 on the last turn
+  - 5 Max Quake (15atk) # Duplicate 2 on the last turn
 - Segment #36:
   - 44 Mud Shot
 - Segment #37:
@@ -268,7 +268,7 @@ Segments sequence:
   - 1 Max Quake (15atk)
 - Segments #93 & #94:
   - 1 Max Quake (14atk)
-  - 4 Max Quake (15atk) # Duplicte 1 on the last turn
+  - 4 Max Quake (15atk) # Duplicate 1 on the last turn
 - Segment #95:
   - 82 Mud Shot
   - 1 Max Quake (14atk)
@@ -449,6 +449,66 @@ Seg: 96 | Extra: 974 dmg | Total: 96974 dmg
 Seg: 98 | Extra: 103 dmg | Total: 98103 dmg
 Seg: 99 | Extra: 582 dmg | Total: 99582 dmg
 Seg: 100 | Extra: 711 dmg | Total: 100711 dmg
+```
+
+All the segments flip at the expected moment ✔️
+
+---
+
+**Chansey Duo Test: NWB, FB4, 1 helper** ([battle](https://youtu.be/wV9raEtqSrs))
+
+This run is a perfect showcase of the max dupe bug happening on the middle of a max phase. Similar to the garbodor test, when the player made a duplicate move during the 2nd turn, he can no longer attack on the last turn. This time the damage dealt on each turn can be perfectly seen with the naked eye. On the 1st turn the damage is the expected one as everything is alright, while on the 2nd turn the damage is way more than the expected and on the 3rd turn is way less. Specifically, it is a +50% more on the 2nd turn and -50% less on the 3rd turn, which as you can expect is the damage of one max move!
+
+Attacks damage:
+- Lvl40 15atk Zamazenta
+  - Metal Claw: `13` dmg
+- Lvl40 14atk Zamazenta
+  - Metal Claw: `13` dmg
+- Lvl30 14atk Machamp
+  - Lvl2 Max Knuckle: `885` dmg
+
+```py
+# 15atk Metal Claw
+0.5 * 6 * ((250 + 15) * 0.7903) / ((128 + 15) * 0.5) * 1.2 * 1.1 * 1.1
+floor(_) + 1
+
+# 14atk Metal Claw
+0.5 * 6 * ((250 + 14) * 0.7903) / ((128 + 15) * 0.5) * 1.2 * 1.1 * 1.1
+floor(_) + 1
+
+# Max Knuckle
+0.5 * 300 * ((234 + 14) * 0.7317) / ((128 + 15) * 0.5) * 1.2 * 1.6 * 1.1 * 1.1
+floor(_) + 1
+```
+
+Segments sequence:
+- Segments #1 to #13:
+  - 100 Metal Claw
+- Segments #14 to #30:
+  - 2 Max Knuckle
+- Segments #31 to #57:
+  - 3 Max Knuckle # Duplicate 1 on the second turn
+- Segments #58 to #66:
+  - 1 Max Knuckle # Remove 1 on the last turn
+- Segments #67 to #79:
+  - 100 Metal Claw
+
+```py
+from src.max_utils import seg
+dmg = (13, 885)
+print(seg(dmg, (100, 0), 100))
+print(seg(dmg, (100, 2), 100))
+print(seg(dmg, (100, 5), 100))
+print(seg(dmg, (100, 6), 100))
+print(seg(dmg, (200, 6), 100))
+```
+
+```
+Seg: 13 | Extra: 0 dmg | Total: 1300 dmg
+Seg: 30 | Extra: 70 dmg | Total: 3070 dmg
+Seg: 57 | Extra: 25 dmg | Total: 5725 dmg
+Seg: 66 | Extra: 10 dmg | Total: 6610 dmg
+Seg: 79 | Extra: 10 dmg | Total: 7910 dmg
 ```
 
 All the segments flip at the expected moment ✔️
